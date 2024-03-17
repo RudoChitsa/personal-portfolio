@@ -1,12 +1,16 @@
-import './App.css';
+import './index.css';
+import AboutMe from './components/AboutMe';
+import Education from './components/Education';
+import Navigation from './components/Navigation';
+import Bio from './components/Bio';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Navigation />
+        <Bio />
+        <AboutMe />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -16,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Education />
     </div>
   );
 }
